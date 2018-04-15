@@ -1,5 +1,5 @@
 
-# MSRB Retirement Calculator
+# Massachusetts State Retirement Board Retirement Calculator Prototype
 
 
 ## Overview
@@ -32,10 +32,15 @@ Then navigate to http://localhost:3000
 
 ### Changing the design of the webpage
 
+The CSS and styling is implemented using the Massachusetts new Mayflower design library as a requirement. It is worth noting that the reference to the library is not secure, and HTTPS cannot be used (the style will not render otherwise).
+
+There are also changes to the DOMAIN the library does, and to prevent such qualities or JQuery additional functions are created to set controller variables to reflect the correct values.
 
 See ``public/views/calculator.view.client.html``
 
 This file is almost entirely HTML/CSS, refer to the express documentation to see how it is combined with the index.html a layer up. One thing to watch out for is places where the values are bound to the Angular model
+
+***NOTE: There is a lot of bloat code at the top which was pulled from directly from the Massachusetts Government website to hold the same headers and design***
 
 ### Inserting an analytics framework or modifying the **header** 
 
@@ -52,11 +57,20 @@ See ``public/services/calculator.client.services.js:calculateData()``
 
 ### Implementing an external service to pull information
 
+An open method and service is left for external calls to an API or database if needed or for future extensibility.
+
 See ``public/services/calculator.client.services.js:retrieveInfo()``
 
 ### Tests
 
-See ``karma.conf.js``
+The test framework is implemented in Karma and Jasmine - with configurations for headless nodes in integration with testing through a Jenkins node with modified settings to alleviate potential compatibility issues.
+Test coverage is also implemented with karma to show what is covered and what is not.
+
+Testing can be initiated on the command line via the following commands:
+- npm test
+- karma start
+
+For more, see ``karma.conf.js``
 
 
 ## Deployment

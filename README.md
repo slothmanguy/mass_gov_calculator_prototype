@@ -37,9 +37,11 @@ The CSS and styling is implemented using the Massachusetts new Mayflower design 
 
 There are also changes to the DOMAIN the library does, and to prevent such qualities or JQuery additional functions are created to set controller variables to reflect the correct values.
 
+**Some design decisions also came out of the external libraries inability to align certain elements on the same line (date of birth and retirement).
+
 See ``public/views/calculator.view.client.html``
 
-This file is almost entirely HTML/CSS, refer to the express documentation to see how it is combined with the index.html a layer up. One thing to watch out for is places where the values are bound to the Angular model
+This file is almost entirely HTML/CSS, refer to the express documentation to see how it is combined with the index.html a layer up. One thing to watch out for is places where the values are bound to the Angular model.
 
 ### Inserting an analytics framework or modifying the **header** 
 

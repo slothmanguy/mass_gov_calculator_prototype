@@ -1,7 +1,7 @@
 
 # Massachusetts State Retirement Board Retirement Calculator Prototype
 
-Application can be found hosted here: https://gov-retirement-calculator.herokuapp.com/
+Application can be found hosted here: http://gov-retirement-calculator.herokuapp.com/
 
 ## Overview
 

@@ -1,6 +1,7 @@
 
 # Massachusetts State Retirement Board Retirement Calculator Prototype
 
+Application can be found hosted here: https://gov-retirement-calculator.herokuapp.com/
 
 ## Overview
 
@@ -39,8 +40,6 @@ There are also changes to the DOMAIN the library does, and to prevent such quali
 See ``public/views/calculator.view.client.html``
 
 This file is almost entirely HTML/CSS, refer to the express documentation to see how it is combined with the index.html a layer up. One thing to watch out for is places where the values are bound to the Angular model
-
-***NOTE: There is a lot of bloat code at the top which was pulled from directly from the Massachusetts Government website to hold the same headers and design***
 
 ### Inserting an analytics framework or modifying the **header** 
 

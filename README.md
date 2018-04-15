@@ -67,8 +67,8 @@ The test framework is implemented in Karma and Jasmine - with configurations for
 Test coverage is also implemented with karma to show what is covered and what is not.
 
 Testing can be initiated on the command line via the following commands:
-- npm test
-- karma start
+``` npm test
+ karma start```
 
 For more, see ``karma.conf.js``
 
